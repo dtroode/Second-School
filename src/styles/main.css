@@ -101,15 +101,15 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
-  background-image: url("/src/images/school-main.jpg");
+  background-image: url("/src/images/school-bottom.jpg");
 }
 
 section:nth-of-type(3) {
-  background-image: url("/src/images/school-main.jpg");
+  background-image: url("/src/images/school-side.jpg");
 }
 
 section:nth-of-type(4) {
-  background-image: url("/src/images/school-main.jpg");
+  background-image: url("/src/images/school-rain.jpg");
 }
 
 section {
