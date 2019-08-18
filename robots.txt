@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://secondshcool.now.sh/sitemap.xml
+Host: https://secondschool.now.sh
