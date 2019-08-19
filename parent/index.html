@@ -128,6 +128,26 @@
     </header>
     <main>
       <section>
+        <picture>
+          <source
+            srcset="
+              /src/images/large/school-main.webp  1800w,
+              /src/images/medium/school-main.webp 1366w,
+              /src/images/small/school-main.webp   800w
+            "
+            sizes="100%"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              /src/images/large/school-main.jpg  1800w,
+              /src/images/medium/school-main.jpg 1366w,
+              /src/images/small/school-main.jpg   800w
+            "
+            sizes="100%"
+          />
+          <img src="/src/images/school-main.jpg" alt="Школа" loading="lazy" />
+        </picture>
         <article>
           <span class="sect_art_tag">
             #разработка
