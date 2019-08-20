@@ -52,7 +52,7 @@ header {
 }
 
 header nav:nth-child(1) a {
-  margin: 0;
+  padding: 0;
 }
 
 footer nav {
@@ -84,7 +84,7 @@ a.sect_art_more {
 }
 
 nav a {
-  margin: 0.75rem;
+  padding: 0.5rem;
   line-height: 1rem;
 }
 
@@ -158,6 +158,12 @@ a {
   position: relative;
   display: flex;
   color: var(--foreground-color);
+}
+
+a.active {
+  background-color: var(--accent-color);
+  pointer-events: none;
+  cursor: default;
 }
 
 a.sect_art_more,
