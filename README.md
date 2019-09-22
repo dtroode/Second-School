@@ -13,5 +13,5 @@ You can **submit** chanages by creating an issue or by **forking** repository an
 
 ## Links
 
-- Developer — [David Kistauri](https://davidkistauri.now.sh/)
+- Developer — [David Kistauri](https://davidkistauri.ru/)
 - [Official website](http://2ndschool.ru/)
