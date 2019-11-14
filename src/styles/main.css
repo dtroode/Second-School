@@ -66,6 +66,7 @@ footer {
 }
 
 footer a,
+section.sect--highlight span,
 h1,
 h2 {
   line-height: 1em;
@@ -106,17 +107,13 @@ section.sect--highlight {
   background-color: var(--highlight-bg);
 }
 
-section.sect--highlight h1,
 section.sect--highlight span {
   position: relative;
   z-index: 1;
   margin-top: 0;
-  color: var(--highlight-fg);
-}
-
-section.sect--highlight span {
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--highlight-fg);
 }
 
 section > h1 {
