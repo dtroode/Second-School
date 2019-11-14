@@ -1,58 +1,35 @@
 @media screen and (max-width: 950px) {
-  header,
-  footer {
-    padding: 1.5rem;
+  :root {
+    --pad: 1.2rem;
   }
   header {
-    position: sticky;
-    top: -16.8rem;
-    grid-template-columns: 3.5rem auto;
-    grid-row-gap: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  header nav:nth-child(2),
-  header nav:nth-child(3) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  header nav:nth-child(1) {
-    grid-row-start: 3;
-    padding: 0;
-  }
-  header nav:nth-child(2) {
-    grid-row-start: 2;
-  }
-  header nav:nth-child(3) {
-    grid-row-start: 1;
-  }
-  footer nav {
-    min-height: unset;
-  }
-  nav:nth-child(n) {
+  header nav {
     border: 0.2rem solid var(--accent-color);
   }
-  nav {
-    flex-direction: column;
-    align-items: start;
-    max-height: 10rem;
-    padding: 0.75rem;
+  main {
+    margin-top: calc(3.9rem + 2 * var(--pad));
   }
   section:nth-last-of-type(n) {
     grid-template: "article" / 1fr;
   }
   section {
-    width: calc(100% - 3rem);
+    width: calc(100% - 2 * var(--pad));
     min-height: unset;
-    margin-top: 1.5rem;
-    padding: 1.5rem 1.5rem 2.4rem 1.5rem;
   }
   section:first-of-type {
-    padding-top: 1.5rem;
+    padding-top: 0;
   }
-  article {
-    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  section > h1 {
+    margin-top: 0;
   }
-  article,
-  img.sect_art_img {
-    border: 0.2rem solid var(--accent-color);
+  footer a,
+  section > h1 {
+    font-size: 2.25rem;
+  }
+  article.art--img {
+    grid-template-columns: 1fr;
   }
 }

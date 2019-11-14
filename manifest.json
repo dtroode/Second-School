@@ -1,5 +1,5 @@
 {
-  "name": "2-я школа",
+  "name": "Вторая школа",
   "short_name": "Школа",
   "icons": [
     {
@@ -35,6 +35,6 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#F2F2F2",
-  "theme_color": "#FBDB99"
+  "background_color": "#fafafa",
+  "theme_color": "#ffe082"
 }
