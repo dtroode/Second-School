@@ -69,8 +69,8 @@ footer a,
 section.sect--highlight span,
 h1,
 h2 {
-  line-height: 1.1em;
-  letter-spacing: -0.02srem;
+  line-height: 1.05em;
+  letter-spacing: -0.02rem;
 }
 
 footer a {
