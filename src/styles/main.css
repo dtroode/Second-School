@@ -1,13 +1,5 @@
 @font-face {
   font-family: "PT Root UI";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("/src/fonts/PT\ Root\ UI_Regular.woff2?v=3.5") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Root UI";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -38,6 +30,7 @@
 
 html {
   font-size: 18px;
+  font-weight: bold;
   scroll-behavior: smooth;
 }
 
@@ -92,7 +85,6 @@ footer a {
 }
 
 a {
-  font-weight: bold;
   text-decoration: none;
   transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   -webkit-transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -120,7 +112,6 @@ section.sect--highlight span {
   z-index: 1;
   margin-top: 0;
   font-size: 1.5rem;
-  font-weight: bold;
   color: var(--highlight-fg);
 }
 
@@ -203,7 +194,6 @@ p {
 
 p a {
   display: inline;
-  font-weight: bold;
   color: var(--red);
   text-decoration: none;
 }
