@@ -1,5 +1,13 @@
 @font-face {
   font-family: "PT Root UI";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/fonts/PT\ Root\ UI_Medium.woff2?v=3.5") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Root UI";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -9,6 +17,7 @@
 :root {
   --background-color: #f2f2f2;
   --foreground-color: #212121;
+  --foreground-color-25: #21212140;
   --accent-color: #ffe082;
   --red: #d32f2f;
   --highlight-bg: #d32f2f;
@@ -19,18 +28,15 @@
 }
 
 *::selection {
-  background-color: var(--accent-color);
-  color: var(--foreground-color);
+  color: var(--red);
 }
 
 *::-moz-selection {
-  background-color: var(--accent-color);
-  color: var(--foreground-color);
+  color: var(--red);
 }
 
 html {
   font-size: 18px;
-  font-weight: bold;
   scroll-behavior: smooth;
 }
 
@@ -60,6 +66,13 @@ header nav a {
   padding: 0;
 }
 
+main > section:nth-of-type(1) {
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+  padding-top: 7rem;
+}
+
 footer {
   position: relative;
   padding: var(--pad);
@@ -70,6 +83,7 @@ footer a,
 section.sect--highlight span,
 h1,
 h2 {
+  font-weight: bold;
   line-height: 1.05em;
   letter-spacing: -0.02em;
 }
@@ -90,16 +104,16 @@ a {
   -webkit-transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
-section:nth-of-type(1) {
-  margin-top: 0;
-  padding-top: 7rem;
-}
-
 section {
   position: relative;
   width: calc(100% - 2 * var(--pad));
   padding: var(--pad);
   background-color: var(--accent-color);
+}
+
+section.content {
+  width: unset;
+  padding: 0;
 }
 
 section.sect--highlight {
@@ -131,20 +145,12 @@ section > h1 a:hover {
   font-style: normal;
 }
 
-picture img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 article {
   position: relative;
+  max-width: 1500px;
 }
 
-article > *:not(img) {
+article > *:not(img):not(picture) {
   max-width: 700px;
 }
 
@@ -156,21 +162,24 @@ article.art--img {
 
 article.art--img,
 p,
-img.sect_art_img {
+img.sect_art_img,
+table {
   margin-top: var(--text-pad);
 }
 
 h1,
 h2,
 p,
-a,
-section.sect--highlight span {
+footer a,
+section.sect--highlight span,
+table {
   font-family: "PT Root UI", Helvetica, Arial, sans-serif;
 }
 
 h1,
 h2,
-p {
+p,
+table {
   color: var(--foreground-color);
 }
 
@@ -182,7 +191,8 @@ h1 {
 h2 {
   margin-top: 0;
   margin-bottom: var(--text-pad);
-  font-size: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: normal;
 }
 
 p {
@@ -218,20 +228,45 @@ a img {
   height: 100%;
 }
 
-img.sect_art_img {
+img.sect_art_img, img.sect_art_imgs  {
   display: block;
   width: 100%;
 }
 
-img.sect_art_imgs {
-  display: inline-block;
+table {
   width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-top: 1px solid var(--foreground-color-25);
+  border-bottom: 1px solid var(--foreground-color-25);
+}
+
+th,
+td {
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  padding-right: 1rem;
+}
+
+th {
+  font-weight: bold;
+  color: var(--red);
+}
+
+td:last-child {
+  text-align: right;
 }
 
 hr {
   height: 2px;
   margin: var(--text-pad) var(--pad) 0 var(--pad);
   border: 0;
-  background-color: var(--foreground-color);
-  opacity: 0.25;
+  background-color: var(--foreground-color-25);
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <title>Вторая школа</title>
@@ -42,10 +42,8 @@
   <meta name="apple-mobile-web-app-title" content="Вторая школа" />
 
   <!-- Linked files -->
-  <link rel="preload" href="/src/styles/mobile.css" as="style">
-  <link rel="preload" href="/src/fonts/PT Root UI_Bold.woff2" as="font"
-    type="font/woff2">
   <link rel="preload" href="/src/images/logo.jpg" as="image" />
+  <link rel="preload" href="/src/styles/mobile.css" as="style" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="/src/styles/main.css" />
   <link rel="stylesheet" href="/src/styles/mobile.css" media="none"
@@ -82,89 +80,118 @@
     <section>
       <h1>
         Вторая школа — русская гос. школа имени А. С. Пушкина в центре Сухума.
+        <a href="/pupils">Для учеников.</a>
         <a href="/history">История школы.</a>
         <a href="#cont">Контакты.</a>
       </h1>
     </section>
-    <hr />
-    <section>
-      <article>
-        <h2>Всему научим, все покажем</h2>
-        <p>
-          Учителя готовы помочь со сложной темой — ребенок никогда не вернется
-          домой без понимания темы. Все обучение на учителях, задача ребенка —
-          показывать свои знания.
-        </p>
-      </article>
-      <article class="art--img">
-        <img src="/src/images/school-main.jpg" alt="Открытый урок про космос"
-          class="sect_art_imgs" loading="lazy" />
-        <img src="/src/images/school-bottom.jpg" alt="Открытый урок про космос"
-          class="sect_art_imgs" loading="lazy" />
-        <img src="/src/images/school-rain.jpg" alt="Открытый урок про космос"
-          class="sect_art_imgs" loading="lazy" />
-        <img src="/src/images/school-right.jpg" alt="Открытый урок про космос"
-          class="sect_art_imgs" loading="lazy" />
-      </article>
-    </section>
-    <section class="sect--highlight">
-      <span>Преподаватели помогут подтянуть оценки, укажут на ошибки и
-        поработают
-        с ребенком — не придется париться и бегать за оценками в конце
-        года.</span>
-    </section>
-    <section>
-      <article>
-        <h2>От нас в хороший вуз</h2>
-        <p>
-          Школа никогда не пропускает мероприятия — олимпиады, телемосты,
-          литератаурные и спортивные конкурсы. Дети проходят республиканские
-          олимпиады, побеждают в футбольных турнирах. Мы всегда держим связь с
-          российскими вузами — представители приезжают в школу или свзяываются
-          по видеосвязи.
-        </p>
-        <p>
-          Организации из России проводят в школе открытые уроки, например —
-          мероприятие про космос.
-          <a href="http://abh.rs.gov.ru/ru/news/10887">→ Открытый урок про
-            космос
-          </a>
-        </p>
-        <img src="/src/images/cosmos.jpg" alt="Открытый урок про космос"
-          class="sect_art_img" loading="lazy" />
-      </article>
-    </section>
-    <section class="sect--highlight">
-      <span>Участие в мероприятиях повышает шансы на поступление в хороший
-        универстет.</span>
-    </section>
-    <section>
-      <article>
-        <h2>Булочки</h2>
-        <p>
-          В буфете есть полноценный обед — макароны, котлеты, плов. Но дети
-          любят его не за это, они любят булочки со сладкой начинкой и
-          сахарной пудрой — на перемене у каждого ребенка в руках булочка.
-        </p>
-      </article>
-    </section>
-    <hr />
-    <section>
-      <article>
-        <h2>Помним героев, культурных и научных деятелей</h2>
-        <p>
-          Мы проводим мероприятия в честь памятных дат — День Победы, дни
-          рождения поэтов. Ежегодно ученики ходят к памятнику Пушкина,
-          выступают со стихами и песнями, посещают музеи.
-        </p>
-        <p>
-          Не забываем героев-войнов.
-          <a href="https://sputnik-abkhazia.ru/video/20150424/1014516066.html">→
-            Открытие мемориальных досок</a>
-        </p>
-        <img src="/src/images/memorial.jpg" alt="Открытиые мемориальных досок"
-          class="sect_art_img" loading="lazy" />
-      </article>
+    <section class="content">
+      <hr />
+      <section>
+        <article>
+          <h2>Всему научим, все покажем</h2>
+          <p>
+            Учителя готовы помочь со сложной темой — ребенок никогда не
+            вернется домой без понимания темы. Все обучение на учителях,
+            задача ребенка — показывать свои знания.
+          </p>
+        </article>
+        <article class="art--img">
+          <picture>
+            <source srcset="/src/images/school-main@1x.webp 1x,
+                      /src/images/school-main@2x.webp 2x" type="image/webp">
+            <img src="/src/images/school-main@1x.jpg"
+              srcset="/src/images/school-main@2x.jpg 2x"
+              alt="Вторая школа через дорогу" class="sect_art_imgs"
+              loading="lazy" />
+          </picture>
+          <picture>
+            <source
+              srcset="/src/images/school-bottom@1x.webp 1x, /src/images/school-bottom@2x.webp 2x"
+              type="image/webp">
+            <img src="/src/images/school-bottom@1x.jpg"
+              srcset="/src/images/school-bottom@2x.jpg 2x"
+              alt="Главный вход второй школы" class="sect_art_imgs"
+              loading="lazy" />
+          </picture>
+          <picture>
+            <source
+              srcset="/src/images/school-rain@1x.webp 1x, /src/images/school-rain@2x.webp 2x"
+              type="image/webp">
+            <img src="/src/images/school-rain@1x.jpg"
+              srcset="/src/images/school-rain@2x.jpg 2x" alt="Двор второй школы"
+              class="sect_art_imgs" loading="lazy" />
+          </picture>
+          <picture>
+            <source
+              srcset="/src/images/school-right@1x.webp 1x, /src/images/school-right@2x.webp 2x"
+              type="image/webp">
+            <img src="/src/images/school-right@1x.jpg"
+              srcset="/src/images/school-right@2x.jpg 2x"
+              alt="Переднее крыло второй школы. Главный вход"
+              class="sect_art_imgs" loading="lazy" />
+          </picture>
+        </article>
+      </section>
+      <section class="sect--highlight">
+        <span>Преподаватели помогут подтянуть оценки, укажут на ошибки и
+          поработают с ребенком — не придется париться и бегать за оценками в
+          конце года.</span>
+      </section>
+      <section>
+        <article>
+          <h2>От нас в хороший вуз</h2>
+          <p>
+            Школа никогда не пропускает мероприятия — олимпиады, телемосты,
+            литератаурные и спортивные конкурсы. Дети проходят республиканские
+            олимпиады, побеждают в футбольных турнирах. Мы всегда держим связь
+            с российскими вузами — представители приезжают в школу или
+            свзяываются по видеосвязи.
+          </p>
+          <p>
+            Организации из России проводят в школе открытые уроки, например —
+            мероприятие про космос.
+            <a href="http://abh.rs.gov.ru/ru/news/10887">→ Открытый урок про
+              космос
+            </a>
+          </p>
+          <img src="/src/images/cosmos.jpg" alt="Открытый урок про космос"
+            class="sect_art_img" loading="lazy" />
+        </article>
+      </section>
+      <section class="sect--highlight">
+        <span>Участие в мероприятиях повышает шансы на поступление в хороший
+          универстет.</span>
+      </section>
+      <section>
+        <article>
+          <h2>Булочки</h2>
+          <p>
+            В буфете есть полноценный обед — макароны, котлеты, плов. Но дети
+            любят его не за это, они любят булочки со сладкой начинкой и
+            сахарной пудрой — на перемене у каждого ребенка в руках булочка.
+          </p>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <article>
+          <h2>Помним героев, культурных и научных деятелей</h2>
+          <p>
+            Мы проводим мероприятия в честь памятных дат — День Победы, дни
+            рождения поэтов. Ежегодно ученики ходят к памятнику Пушкина,
+            выступают со стихами и песнями, посещают музеи.
+          </p>
+          <p>
+            Не забываем героев-войнов.
+            <a
+              href="https://sputnik-abkhazia.ru/video/20150424/1014516066.html">→
+              Открытие мемориальных досок</a>
+          </p>
+          <img src="/src/images/memorial.jpg" alt="Открытиые мемориальных досок"
+            class="sect_art_img" loading="lazy" />
+        </article>
+      </section>
     </section>
   </main>
   <footer id="cont">

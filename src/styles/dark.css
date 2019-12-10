@@ -2,6 +2,7 @@
   :root {
     --background-color: #212121;
     --foreground-color: #f2f2f2;
+    --foreground-color-25: #f2f2f240;
     --accent-color: #212121;
     --red: #ff6659;
     --highlight-bg: #ff665920;

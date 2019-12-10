@@ -9,18 +9,17 @@
   header nav {
     border: 0.2rem solid var(--accent-color);
   }
-  main {
-    margin-top: calc(3.9rem + 2 * var(--pad));
+  main > section:first-of-type {
+    padding-top: calc(3.5rem + 2 * var(--pad));
   }
   section:nth-last-of-type(n) {
     grid-template: "article" / 1fr;
   }
   section {
     width: calc(100% - 2 * var(--pad));
-    min-height: unset;
   }
-  section:first-of-type {
-    padding-top: 0;
+  section {
+    width: unset;
   }
   section > h1 {
     margin-top: 0;
@@ -31,5 +30,8 @@
   }
   article.art--img {
     grid-template-columns: 1fr;
+  }
+  table span {
+    display: none;
   }
 }

@@ -1,150 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Вторая школа</title>
+<html lang="ru">
 
-    <!-- HTML Meta Tags -->
-    <meta name="Description" content="Вторая школа — подойдет вашему ребенку" />
-    <meta name="theme-color" content="#FBDB99" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" cont="ie=edge" />
+<head>
+  <title>История второй школы</title>
 
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Вторая школа" />
-    <meta
-      itemprop="description"
-      content="Вторая школа — подойдет вашему ребенку"
-    />
-    <meta
-      itemprop="image"
-      content="https://secondschool.now.sh/src/images/og.png"
-    />
+  <!-- HTML Meta Tags -->
+  <meta name="Description"
+    content="История самой крутой школы в Сухуме — второй. С 1870…" />
+  <meta name="theme-color" content="#FBDB99" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" cont="ie=edge" />
 
-    <!-- Facebook Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://secondschool.now.sh/src/images/og.png"
-    />
-    <meta property="og:url" content="https://secondschool.now.sh" />
-    <meta property="og:title" content="Вторая школа" />
-    <meta
-      property="og:description"
-      content="Вторая школа — подойдет вашему ребенку"
-    />
-    <meta property="og:locale" content="ru_RU" />
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="История второй школы" />
+  <meta itemprop="description"
+    content="История самой крутой школы в Сухуме — второй. С 1870…" />
+  <meta itemprop="image"
+    content="https://secondschool.now.sh/src/images/og.png" />
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://secondschool.now.sh" />
-    <meta name="twitter:title" content="Вторая школа" />
-    <meta
-      name="twitter:description"
-      content="Вторая школа — подойдет вашему ребенку"
-    />
-    <meta
-      name="twitter:image"
-      content="https://secondschool.now.sh/src/images/og.png"
-    />
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://secondschool.now.sh/src/images/og.png" />
+  <meta property="og:url" content="https://secondschool.now.sh/history" />
+  <meta property="og:title" content="История второй школы" />
+  <meta property="og:description"
+    content="История самой крутой школы в Сухуме — второй. С 1870…" />
+  <meta property="og:locale" content="ru_RU" />
 
-    <!-- IOS Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Вторая школа" />
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://secondschool.now.sh/history" />
+  <meta name="twitter:title" content="История второй школы" />
+  <meta name="twitter:description"
+    content="История самой крутой школы в Сухуме — второй. С 1870…" />
+  <meta name="twitter:image"
+    content="https://secondschool.now.sh/src/images/og.png" />
 
-    <!-- Linked files -->
-    <link rel="preload" href="/src/images/logo.jpg" as="image" />
-    <link rel="preload" href="/src/images/school-main.jpg" as="image" />
-    <link rel="preload" href="/src/images/school-bottom.jpg" as="image" />
-    <link rel="preload" href="/src/images/school-rain.jpg" as="image" />
-    <link rel="preload" href="/src/images/school-right.jpg" as="image" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
-    <link
-      rel="stylesheet"
-      href="/src/styles/mobile.css"
-      media="none"
-      onload="if(media!='screen and (max-width: 900px)')media='screen and (max-width: 900px)'"
-    />
-    <link rel="stylesheet" href="/src/styles/dark.css" />
+  <!-- IOS Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="История второй школы" />
 
-    <!-- Icons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="128x128"
-      href="/src/images/logos/logo-128.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="64x64"
-      href="/src/images/logos/logo-64.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="32x32"
-      href="/src/images/logos/logo-32.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="16x16"
-      href="/src/images/logos/logo-16.png"
-    />
-    <link
-      rel="icon"
-      sizes="128x128"
-      href="/src/images/logos/logo-128.png"
-      type="img/png"
-    />
-    <link
-      rel="icon"
-      sizes="64x64"
-      href="/src/images/logos/logo-64.png"
-      type="img/png"
-    />
-    <link
-      rel="icon"
-      sizes="32x32"
-      href="/src/images/logos/logo-32.png"
-      type="img/png"
-    />
-    <link
-      rel="icon"
-      sizes="16x16"
-      href="/src/images/logos/logo-16.png"
-      type="img/png"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/"><img src="/src/images/logo.jpg" alt="Вторая школа"/></a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>
-          История <a href="/">второй школы.</a>
-          <a href="#cont">Контакты.</a>
-        </h1>
-      </section>
+  <!-- Linked files -->
+  <link rel="preload" href="/src/images/logo.jpg" as="image" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/mobile.css" media="none"
+    onload="if(media!='screen and (max-width: 900px)')media='screen and (max-width: 900px)'" />
+  <link rel="stylesheet" href="/src/styles/dark.css" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="128x128"
+    href="/src/images/logos/logo-128.png" />
+  <link rel="apple-touch-icon" sizes="64x64"
+    href="/src/images/logos/logo-64.png" />
+  <link rel="apple-touch-icon" sizes="32x32"
+    href="/src/images/logos/logo-32.png" />
+  <link rel="apple-touch-icon" sizes="16x16"
+    href="/src/images/logos/logo-16.png" />
+  <link rel="icon" sizes="128x128" href="/src/images/logos/logo-128.png"
+    type="img/png" />
+  <link rel="icon" sizes="64x64" href="/src/images/logos/logo-64.png"
+    type="img/png" />
+  <link rel="icon" sizes="32x32" href="/src/images/logos/logo-32.png"
+    type="img/png" />
+  <link rel="icon" sizes="16x16" href="/src/images/logos/logo-16.png"
+    type="img/png" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/"><img src="/src/images/logo.jpg"
+          alt="История второй школы" /></a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>
+        История <a href="/">второй школы.</a> <a href="/pupils">Для
+          учеников.</a>
+        <a href="#cont">Контакты.</a>
+      </h1>
+    </section>
+    <section class="content">
       <hr />
       <section>
         <article>
           <h2>Образование прогимназии</h2>
           <p>
-            В 1870 году Абхазия входила в состав Российской Империи. В Сухуме на
-            пересечении улиц Колюбякинской (Леона) и Инженерной (В. Ардзинба)
-            построили одноэтажное каменное здание женской прогимназии с
-            подготовительным классом. Прогимназией покровительствовала княгиня
-            Мария Федоровна и поддерживалась городской казной.
+            В 1870 году Абхазия входила в состав Российской Империи. В Сухуме
+            на пересечении улиц Колюбякинской (Леона) и Инженерной (В.
+            Ардзинба) построили одноэтажное каменное здание женской
+            прогимназии с подготовительным классом. Прогимназией
+            покровительствовала княгиня Мария Федоровна и поддерживалась
+            городской казной.
           </p>
-          <img
-            src="/src/images/sukhum-old.jpg"
-            alt="Старый Сухум"
-            class="sect_art_img"
-            loading="lazy"
-          />
+          <img src="/src/images/sukhum-old.jpg" alt="Старый Сухум"
+            class="sect_art_img" loading="lazy" />
         </article>
       </section>
       <hr />
@@ -164,24 +119,19 @@
         <article>
           <h2>Новое направление</h2>
           <p>
-            В начале 20-х годов ХХ века в здании гимназии разместилась Сухумская
-            2-я русская средняя школа. В 1942 году школа стала мужской из-за
-            раздельного обучения и получила новое название: Сухумская 2-я
-            мужская русская школа имени А. С. Пушкина.
+            В начале 20-х годов ХХ века в здании гимназии разместилась
+            Сухумская 2-я русская средняя школа. В 1942 году школа стала
+            мужской из-за раздельного обучения и получила новое название:
+            Сухумская 2-я мужская русская школа имени А. С. Пушкина.
           </p>
-          <img
-            src="/src/images/school-old.jpg"
-            alt="Здание школы в старом виде"
-            class="sect_art_img"
-            loading="lazy"
-          />
+          <img src="/src/images/school-old.jpg" alt="Здание школы в старом виде"
+            class="sect_art_img" loading="lazy" />
         </article>
       </section>
       <section class="sect--highlight">
         <span>
           Композитор П. Петров и педагог Сухумского музыкального училища С.
-          Воронова восстановили текст марша и мелодию.</span
-        >
+          Воронова восстановили текст марша и мелодию.</span>
       </section>
       <section>
         <article>
@@ -195,21 +145,16 @@
           </p>
         </article>
       </section>
-    </main>
-    <footer id="cont">
-      <a href="mailto:info@2ndschool.ru" title="Почта"
-        >Почта: info@2ndschool.ru</a
-      ><br />
-      <a href="https://yandex.ru/maps/-/CGqsMVZ9" title="Школа на карте"
-        >Адрес: пр. Леона, 25</a
-      ><br />
-      <a
-        href="https://davidkistauri.ru"
-        title="Разработчик сайта"
-        target="_blank"
-        rel="noopener"
-        >Разработчик: Давид Кистаури</a
-      >
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer id="cont">
+    <a href="mailto:info@2ndschool.ru" title="Почта">Почта:
+      info@2ndschool.ru</a><br />
+    <a href="https://yandex.ru/maps/-/CGqsMVZ9" title="Школа на карте">Адрес:
+      пр. Леона, 25</a><br />
+    <a href="https://davidkistauri.ru" title="Разработчик сайта" target="_blank"
+      rel="noopener">Разработчик: Давид Кистаури</a>
+  </footer>
+</body>
+
 </html>
