@@ -13,5 +13,5 @@ You can **submit** chanages by creating an issue or by **forking** repository an
 
 ## Links
 
-- Developer — [David Kistauri](https://davidkistauri.ru/)
+- Developer — [David Kistauri](https://dtroode.vercel.app/)
 - [Official website](http://2ndschool.ru/)
