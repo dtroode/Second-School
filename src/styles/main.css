@@ -57,7 +57,8 @@ footer nav a {
 }
 
 h1,
-footer nav a {
+footer nav a,
+span {
   font-size: 3rem;
 }
 
@@ -71,8 +72,8 @@ h2 {
   margin: 2rem 0 1rem 0;
 }
 
-mark {
-  background-color: var(--pink);
+span {
+  line-height: 1;
 }
 
 p {
