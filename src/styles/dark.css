@@ -1,12 +1,10 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --background-color: #212121;
-    --foreground-color: #f2f2f2;
-    --foreground-color-25: #f2f2f240;
-    --accent-color: #212121;
-    --red: #ff6659;
-    --highlight-bg: #ff665920;
-    --highlight-fg: #ff6659;
+    --light: #ffe08240;
+    --background: #3e2723;
+    --foreground: #ffe082;
+    --accent: #ff6659;
+    --accent-light: #ff665940;
   }
   h1,
   h2,
