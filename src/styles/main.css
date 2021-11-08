@@ -2,7 +2,7 @@
   font-family: "PT Root UI";
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
   src: url("/src/fonts/PT\ Root\ UI_Medium.woff2?v=3.5") format("woff2");
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Root UI";
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
   src: url("/src/fonts/PT\ Root\ UI_Bold.woff2?v=3.5") format("woff2");
 }
 
